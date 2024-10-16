@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<MPD xmlns:cenc="urn:mpeg:cenc:2013" xmlns="urn:mpeg:dash:schema:mpd:2011" profiles="urn:mpeg:dash:profile:isoff-live:2011" minBufferTime="PT10.00S" mediaPresentationDuration="PT6M" type="static">
+  <!-- Created with Bento4 mp4-dash.py, VERSION=2.0.0-639 -->
+  <Period>
+    <!-- Video -->
+    <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" maxWidth="180" maxHeight="180">
+      <!-- MPEG Common Encryption -->
+      <ContentProtection schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc" cenc:default_KID="11223344-5566-7788-99aa-bbccddeef180"/>
+      <!-- Widevine -->
+      <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed">
+        <cenc:pssh>AAAALnBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAAA4IARABGgNoZXMiA2hlcw==</cenc:pssh>
+      </ContentProtection>
+      <Representation id="video-avc1" codecs="avc1.64000C" width="180" height="180" scanType="progressive" frameRate="25" bandwidth="13104">
+        <SegmentList timescale="1000" duration="10000">
+          <Initialization sourceURL="videof.mp4" range="40-849"/>
+          <SegmentURL media="videof.mp4" mediaRange="850-17230"/>
+          <SegmentURL media="videof.mp4" mediaRange="17231-33350"/>
+          <SegmentURL media="videof.mp4" mediaRange="33351-49470"/>
+          <SegmentURL media="videof.mp4" mediaRange="49471-65590"/>
+          <SegmentURL media="videof.mp4" mediaRange="65591-81710"/>
+          <SegmentURL media="videof.mp4" mediaRange="81711-97830"/>
+          <SegmentURL media="videof.mp4" mediaRange="97831-113950"/>
+          <SegmentURL media="videof.mp4" mediaRange="113951-130070"/>
+          <SegmentURL media="videof.mp4" mediaRange="130071-146190"/>
+          <SegmentURL media="videof.mp4" mediaRange="146191-162310"/>
+          <SegmentURL media="videof.mp4" mediaRange="162311-178430"/>
+          <SegmentURL media="videof.mp4" mediaRange="178431-194550"/>
+          <SegmentURL media="videof.mp4" mediaRange="194551-210670"/>
+          <SegmentURL media="videof.mp4" mediaRange="210671-226790"/>
+          <SegmentURL media="videof.mp4" mediaRange="226791-242910"/>
+          <SegmentURL media="videof.mp4" mediaRange="242911-259030"/>
+          <SegmentURL media="videof.mp4" mediaRange="259031-275150"/>
+          <SegmentURL media="videof.mp4" mediaRange="275151-291270"/>
+          <SegmentURL media="videof.mp4" mediaRange="291271-307390"/>
+          <SegmentURL media="videof.mp4" mediaRange="307391-323510"/>
+          <SegmentURL media="videof.mp4" mediaRange="323511-339630"/>
+          <SegmentURL media="videof.mp4" mediaRange="339631-355750"/>
+          <SegmentURL media="videof.mp4" mediaRange="355751-371870"/>
+          <SegmentURL media="videof.mp4" mediaRange="371871-387990"/>
+          <SegmentURL media="videof.mp4" mediaRange="387991-404110"/>
+          <SegmentURL media="videof.mp4" mediaRange="404111-420230"/>
+          <SegmentURL media="videof.mp4" mediaRange="420231-436350"/>
+          <SegmentURL media="videof.mp4" mediaRange="436351-452470"/>
+          <SegmentURL media="videof.mp4" mediaRange="452471-468590"/>
+          <SegmentURL media="videof.mp4" mediaRange="468591-484710"/>
+          <SegmentURL media="videof.mp4" mediaRange="484711-500830"/>
+          <SegmentURL media="videof.mp4" mediaRange="500831-516950"/>
+          <SegmentURL media="videof.mp4" mediaRange="516951-533070"/>
+          <SegmentURL media="videof.mp4" mediaRange="533071-549190"/>
+          <SegmentURL media="videof.mp4" mediaRange="549191-565310"/>
+          <SegmentURL media="videof.mp4" mediaRange="565311-581874"/>
+        </SegmentList>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
